@@ -2,14 +2,14 @@
   <div class="card">
     <img class="card__img" src="@/assets/img.png" alt="img"/>
     <div class="info">
-      <p class="info__name">Ervin Howell</p>
+      <p class="info__name">{{ name }}</p>
       <div class="info__contact">
         <p>email:</p>
-        <p>Shanna@melissa.tv</p>
+        <p>{{ email }}</p>
       </div>
       <div class="info__contact">
         <p>phone:</p>
-        <p>010-692-6593 x09125</p>
+        <p>{{ phone }}</p>
       </div>
       <p class="info__about-title">О себе:</p>
       <p class="info__about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -23,7 +23,21 @@
 
 <script>
 export default {
-  name: "CardInfo"
+  name: "CardInfo",
+  props: {
+    name: {
+      type: String,
+      default: ''
+    },
+    email: {
+      type: String,
+      default: ''
+    },
+    phone: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 
@@ -33,6 +47,7 @@ export default {
   flex-direction: row;
   gap: 61px;
   padding: 30px 30px 30px 21px;
+  height: -webkit-fill-available;
 
   &__img {
     width: 424px;
