@@ -17,6 +17,11 @@ export default {
   justify-content: space-between;
   padding: 50px 50px 0 50px;
 
+  @media screen and (max-width: 1100px){
+    display: flex;
+    flex-direction: column;
+  }
+
   &__logo {
     font-size: 32px;
     font-weight: 700;
