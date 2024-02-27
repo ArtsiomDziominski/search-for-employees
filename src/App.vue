@@ -35,11 +35,11 @@ p {
 }
 
 .page {
-  width: 1266px;
+  max-width: 1266px;
   height: 589px;
   border-radius: 10px;
   background-color: #FDFDFD;
   box-shadow: 0 0 10px 0 #0000001A;
-  margin: 26px 53px 44px 47px
+  margin: 26px 53px 44px 47px;
 }
 </style>

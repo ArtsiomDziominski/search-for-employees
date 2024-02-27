@@ -49,6 +49,11 @@ export default {
   padding: 30px 30px 30px 21px;
   height: -webkit-fill-available;
 
+  @media screen and (max-width: 1100px){
+    display: flex;
+    flex-direction: column;
+  }
+
   &__img {
     width: 424px;
     height: 286px;

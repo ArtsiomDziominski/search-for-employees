@@ -24,5 +24,13 @@ export default {
   grid-template-rows: 1fr;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 1100px){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    justify-items: center;
+    align-items: center;
+  }
 }
 </style>
